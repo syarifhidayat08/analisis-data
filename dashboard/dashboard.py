@@ -38,7 +38,7 @@ def create_byweathersit_df(df):
     return byweathersit_df
 
 # Load Data
-day_df = pd.read_csv("day.csv", delimiter=",")
+day_df = pd.read_csv("./dashboard/day.csv", delimiter=",")
 datetime_columns = ["dteday"]
 day_df.sort_values(by = "dteday", inplace = True)
 day_df.reset_index(inplace = True)
